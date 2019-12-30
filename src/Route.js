@@ -34,6 +34,12 @@
 				res.render('naver369600b9522b96cb0b63b2bc39396558.html',{});
 			});
 
+			app.get('/robots.txt',function(req,res){
+				res.send(`
+User-agent: *
+Allow:/`);
+			});
+
 
 			//1. enetry point
 			app.listen(1229,function(){
